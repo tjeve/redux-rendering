@@ -17,12 +17,6 @@ const initialState = [
     },
 ];
 
-function copyArray(array) {
-    let newArray = [ 
-        ...array 
-    ]
-}
-
 function addToArray(array) {
     let newArray =  [
         ...array.push()

@@ -11,7 +11,7 @@ const reducer = (state = initialState, action) => {
     if (type === "ADD_NAMETAG") {
         console.log(addName)
         return [
-            ...state, //spread operator is used to copy the previous array and then add to it. 
+            ...state, //spread operator is used to copy the previous array and then add to it without mutating the original. 
             `${name}` //this adds the name of the next item in the array
         ]
     }

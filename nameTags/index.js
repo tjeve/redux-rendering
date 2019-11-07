@@ -6,6 +6,6 @@ subscribe(() => render(getState()));
 dispatch({ type: null }); // Here we're making a call to dispatch() - this triggers the first render.
 
 // Write DOM event listeners here, make them dispatch actions to the Redux store
-const addName = document.getElementById("name")
-addName.addEventListener("submit", e => dispatch({ type: "ADD_NAMETAG"}))
+const name = document.getElementById("name")
+name.addEventListener("submit", e => dispatch({ type: "ADD_NAMETAG"}))
 
